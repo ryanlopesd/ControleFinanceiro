@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
     <div class="all-content">
         <div class="top-content">
@@ -42,6 +40,66 @@
                     <i class="fa-solid fa-money-bill-trend-up"></i>
                 </div>
             </div>
+        </div>
+
+        <div class="action-content">
+            <div class="action-content-div">
+                <span>
+                    Descrição
+                </span>
+                <input type="text" placeholder="Digite aqui sua descrição">
+            </div>
+
+            <div class="action-content-div">
+                <span>
+                    Valor
+                </span>
+                <input type="text" placeholder="0.00">
+            </div>
+
+            <div class="action-content-div">
+                <span>
+                    Tipo
+                </span>
+                <radio-group>
+                    <input type="radio" id="entrada" name="tipo" value="entrada">
+                    <label for="entrada">Entrada</label>
+                    <input type="radio" id="saida" name="tipo" value="saida">
+                    <label for="saida">Saída</label>
+                </radio-group>
+            </div>
+
+            <div class="action-button">
+                <button>
+                    Adicionar
+                </button>
+            </div>
+        </div>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                        <th>Tipo</th>
+                        <th>Excluir</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Salário</td>
+                        <td>R$ 5000,00</td>
+                        <td>Entrada</td>
+                        <td><i class="fa-solid fa-trash"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Aluguel</td>
+                        <td>R$ 1500,00</td>
+                        <td>Saída</td>
+                        <td><i class="fa-solid fa-trash"></i></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </body>
