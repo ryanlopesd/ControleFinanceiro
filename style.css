@@ -18,7 +18,7 @@ body{
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-    gap: 15%
+    gap: 2rem;
 }
 .top-content{
     width: 100%;
@@ -78,6 +78,7 @@ body{
     box-sizing: border-box;
     width: 78.5%;
     height: 15vh;
+    margin-top: 7vh;
 }
 .action-button button {
     background-color: #7DA2FF;
@@ -110,4 +111,52 @@ body{
 }
 .action-content-div input[type="text"]{
     width: 85%;
+}
+.table-content{
+    width: 78.5%;
+    display: flex;
+    justify-content: center;
+    border-radius: .5rem;
+    overflow: hidden;
+      box-shadow: 5px 5px 5px -2px rgba(0,0,0,0.49);
+    -webkit-box-shadow: 5px 5px 5px -2px rgba(0,0,0,0.49);
+    -moz-box-shadow: 5px 5px 5px -2px rgba(0,0,0,0.49);
+}
+
+table {
+  width: 100%;
+  height: auto;
+  margin: 0px auto;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+thead {
+  background-color: var(--white); /* fundo do cabeçalho */
+  color: black;            /* cor do texto */
+  border-bottom: 2.5px solid #ddd; /* linha inferior */
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* listras alternadas */
+}
+
+tbody tr:hover {
+  background-color: #e6f7ff; /* destaque ao passar o mouse */
+}
+
+i.fa-trash {
+  color: #000000;       
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+i.fa-trash:hover {
+  color: #000000;       
+  transform: scale(1.2); 
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Controle Financeiro</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">
@@ -47,14 +48,14 @@
                 <span>
                     Descrição
                 </span>
-                <input type="text" placeholder="Digite aqui sua descrição">
+                <input id="descricao" type="text" placeholder="Digite aqui sua descrição">
             </div>
 
             <div class="action-content-div">
                 <span>
                     Valor
                 </span>
-                <input type="text" placeholder="0.00">
+                <input id="valor" type="text" placeholder="0.00">
             </div>
 
             <div class="action-content-div">
@@ -70,33 +71,27 @@
             </div>
 
             <div class="action-button">
-                <button>
+                <button onclick = "adicionarItem()">
                     Adicionar
                 </button>
             </div>
         </div>
-        <div>
+        <div class="table-content">
             <table>
                 <thead>
                     <tr>
                         <th>Descrição</th>
                         <th>Valor</th>
                         <th>Tipo</th>
-                        <th>Excluir</th>
+                        <th style="text-align: center;">Ação</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="tabela">
                     <tr>
-                        <td>Salário</td>
-                        <td>R$ 5000,00</td>
-                        <td>Entrada</td>
-                        <td><i class="fa-solid fa-trash"></i></td>
-                    </tr>
-                    <tr>
-                        <td>Aluguel</td>
-                        <td>R$ 1500,00</td>
+                        <td>Conta de Luz</td>
+                        <td>R$ 100,00</td>
                         <td>Saída</td>
-                        <td><i class="fa-solid fa-trash"></i></td>
+                        <td style="text-align: center;"><i class="fa-solid fa-trash"></i></td>
                     </tr>
                 </tbody>
             </table>
